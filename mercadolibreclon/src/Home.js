@@ -11,6 +11,7 @@ function Home() {
             </div>
             <div className="home_cardPayment">
                 <CardPay />
+                <h1>Descubrí</h1>
                 <ButtonHome />
             </div>
             
