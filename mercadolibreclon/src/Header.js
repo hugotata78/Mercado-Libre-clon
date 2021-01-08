@@ -1,5 +1,6 @@
 import React from 'react';
 import './Header.css';
+import { Link } from 'react-router-dom';
 import SearchIcon from '@material-ui/icons/Search';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import LocalAtmIcon from '@material-ui/icons/LocalAtm';
@@ -7,7 +8,9 @@ import LocalAtmIcon from '@material-ui/icons/LocalAtm';
 function Header() {
     return (
         <div className="header">
-            <img className="header_logo" src='https://upload.wikimedia.org/wikipedia/commons/d/d4/MercadoLibre_logo.PNG' alt="meli" />
+            <Link to="/">
+                <img className="header_logo" src='https://upload.wikimedia.org/wikipedia/commons/d/d4/MercadoLibre_logo.PNG' alt="meli" />
+            </Link>
             <div className="header_search">
                 <input className="header_searchInput" type="text" placeholder="Buscar productos, marcas y mas..." />
                 <SearchIcon className="header_searchIcon" />
